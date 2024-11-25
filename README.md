@@ -18,4 +18,4 @@ Los hilos se ejecutan de manera independiente y, debido a la naturaleza concurre
 
 1. Compila el programa con el siguiente comando (usando `g++`):
    ```bash
-   g++ -std=c++11 -pthread main.cpp -o imprimirNumeros
+   g++ -std=c++11 -pthread main.cpp -o multihilo.cpp
