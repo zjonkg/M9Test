@@ -1,22 +1,23 @@
 #include <iostream>
 #include <thread>
+using namespace std;
 
 void imprimirImpares() {
     for (int i = 1; i < 11; i += 2) {
-        std::cout << i << std::endl;
+        cout << i << endl;
     }
 }
 
 void imprimirPares() {
     for (int i = 2; i < 11; i += 2) {
-        std::cout << i << std::endl;
+        cout << i << endl;
     }
 }
 
 int main() {
     // Crear dos hilos
-    std::thread hiloImpares(imprimirImpares);
-    std::thread hiloPares(imprimirPares);
+    thread hiloImpares(imprimirImpares);
+    thread hiloPares(imprimirPares);
 
     // Esperar a que ambos hilos acaben
     hiloImpares.join();
